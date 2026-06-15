@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-llm-router"
+version = "0.1.0"
+description = "Routes prompts to local Ollama first with optional cloud fallback."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Binit Kalsara", email = "binit@example.com"}
+]
+keywords = ["ollama", "llm", "router", "termux", "local-first"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+llm-router = "llm_router:main"
